@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "openuxkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/OpenUXKit/OpenUXKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a8d89523afd0aa9e06e81ee9b7748eb288ff2630"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift",
+      "state" : {
+        "revision" : "132aea4f236ccadc51590b38af0357a331d51fa2",
+        "version" : "6.10.2"
+      }
+    }
+  ],
+  "version" : 2
+}
