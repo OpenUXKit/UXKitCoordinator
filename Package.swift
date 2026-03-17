@@ -65,7 +65,7 @@ let package = Package(
             ),
             remote: .package(
                 url: "https://github.com/Mx-Iris/CocoaCoordinator",
-                branch: "main"
+                from: "0.4.1"
             )
         ),
         .package(
