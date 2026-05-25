@@ -61,7 +61,7 @@ let package = Package(
             local: .package(
                 path: "../CocoaCoordinator",
                 isRelative: true,
-                isEnabled: true
+                isEnabled: false
             ),
             remote: .package(
                 url: "https://github.com/Mx-Iris/CocoaCoordinator",
@@ -71,6 +71,11 @@ let package = Package(
         .package(
             local: .package(
                 path: "\(MxIrisStudioWorkspace.relativePersonalDirectory)/Library/macOS/OpenUXKit",
+                isRelative: true,
+                isEnabled: true
+            ),
+            .package(
+                path: "../OpenUXKit",
                 isRelative: true,
                 isEnabled: true
             ),
