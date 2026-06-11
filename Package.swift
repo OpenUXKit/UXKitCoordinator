@@ -61,7 +61,7 @@ let package = Package(
             local: .package(
                 path: "../CocoaCoordinator",
                 isRelative: true,
-                isEnabled: false
+                isEnabled: true
             ),
             remote: .package(
                 url: "https://github.com/Mx-Iris/CocoaCoordinator",
