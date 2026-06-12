@@ -76,7 +76,7 @@ extension Transition {
     /// `positioningRect` in `positioningView`. The content controller must be a
     /// `UXViewController` so the popover honours its `preferredContentSize`.
     public static func uxPopover(
-        _ presentable: Presentable,
+        _ presentable: ViewPresentable,
         relativeTo positioningRect: NSRect,
         of positioningView: NSView,
         preferredEdge: NSRectEdge,

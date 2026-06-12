@@ -15,7 +15,7 @@ import UXKit
 private let logger = Logger(subsystem: "com.JH.OpenUXKitCoordinator", category: "Transition")
 
 extension Transition where ViewController: UXNavigationController {
-    public static func push(_ presentable: Presentable, animated: Bool) -> Self {
+    public static func push(_ presentable: ViewPresentable, animated: Bool) -> Self {
         Self(presentables: [presentable]) { windowController, viewController, options, completion in
             if let uxViewController = presentable.viewController as? UXViewController {
                 viewController?.push(
@@ -39,7 +39,7 @@ extension Transition where ViewController: UXNavigationController {
         }
     }
 
-    public static func pop(to presentable: Presentable, animated: Bool) -> Self {
+    public static func pop(to presentable: ViewPresentable, animated: Bool) -> Self {
         Self(presentables: [presentable]) { _, rootViewController, options, completion in
             if let uxViewController = presentable.viewController as? UXViewController {
                 rootViewController?.pop(
@@ -64,7 +64,7 @@ extension Transition where ViewController: UXNavigationController {
         }
     }
 
-    public static func set(_ presentables: [Presentable], animated: Bool) -> Self {
+    public static func set(_ presentables: [ViewPresentable], animated: Bool) -> Self {
         Self(presentables: presentables) { _, rootViewController, options, completion in
             rootViewController?.set(
                 presentables.compactMap { $0.viewController as? UXViewController },
